@@ -1,0 +1,257 @@
+:root{
+    --main_color : #b70215;
+}
+body{
+    font-family: 'Nova Square', sans-serif !important;
+}
+    /* start all  */
+.super_container{
+    display: none;
+}
+    /* start login section  */
+.start{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../Images/background/background.webp);
+    background-position: center;
+    background-size: cover;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 555555555555;
+}
+.start .btn{
+    margin: auto;
+    display: block;
+    top: 75%;
+    position: relative;
+    font-size: 35px;
+    border: 2px solid gold;
+    border-radius: 50px;    
+    color: white;
+    background: var(--main_color);
+}
+.start .btn:hover{
+    color: gold;
+    border: 3px solid white;
+    background: black;
+    transition-duration: 1s;
+    font-size: 40px;
+}
+    /* start nav bar  */
+.my_nav{
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+.my_nav ul li a:hover{
+    background-color: rgba(64, 63, 63, 0.506);
+    color: gold;
+    border-radius: 20px;
+    font-size: 18px;
+}
+.navbar{
+    background-color: var(--main_color);
+    margin: auto;
+    border-radius: 0 0 20px 20px;
+    border-bottom: 5px solid gold;
+}
+.actives{
+    background-color: rgba(64, 63, 63, 0.506) !important;
+    color: gold !important;
+    border-radius: 20px;
+    font-size: 18px !important;
+}
+    /* start header (Home) */
+.header{
+    background-color: rgba(0, 0, 0, .4);
+    height: 100vh;
+    width: 100%;
+    padding: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.header .title{
+    color: #fff;
+    /* margin-top: 200px; */
+    text-align: center;
+    font-size: 100px;
+}
+.vid{
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    z-index: -1;
+}
+h2::after{
+    content: "";
+    width: 150px;
+    height: 5px;
+    background-color: gold;
+    margin: 10px auto;
+    display: block;
+    border-radius: 50px;
+}
+.hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 2s;
+}
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}  
+    /* start our team  */
+.our_team{
+    width: 100%;
+    background-color: var(--main_color) ;
+}
+.card-img-top{
+    height: 250px;
+    width: auto;
+}
+.item .card{
+    border-radius: 30px;
+    border: 4px solid gold;
+    overflow: hidden;
+}
+    /* start this season  */
+.this_season .player{
+    border: 3px solid gold;
+    border-radius: 50px;
+    padding: 10px;
+}
+.this_season h5{
+    font-size: 25px;
+    font-weight: bold;
+}
+.this_season p{
+    font-size: 25px;
+    line-height: 80px;
+}
+.this_season .player img{
+    border-radius: 50%;
+    border: 3px solid var(--main_color);
+}
+.this_season span{
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    margin: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.this_season .logo:nth-child(2) {
+    transition-delay: 200ms;
+}
+.this_season .logo:nth-child(3) {
+    transition-delay: 400ms;
+
+}
+.first{
+    background-color: red;
+}
+.second{
+    background-color: black;
+}
+.third{
+    background-color: rgb(97, 97, 13);
+}
+.light{
+    border: 3px solid gold;
+}
+h4::after{
+    content: "";
+    width: 100px;
+    height: 3px;
+    background-color: red;
+    margin: 10px auto;
+    display: block;
+    border-radius: 50px;
+}
+    /* start abuot us  */
+.about_us{
+    background-color: rgb(54, 52, 52);
+}
+.about_us img {
+    width: 150px;
+    border-radius: 50%;
+    margin: auto;
+}
+.social a{
+    font-size: 35px;
+    color: #fff;
+    text-decoration: none;
+}
+    /* start legands  */
+.Legands .btn{
+    border: 2px solid var(--main_color);
+}
+.Legands .btn:hover{
+    border: 2px solid black;
+    background-color: var(--main_color);
+    color: white;
+}
+    /* start legands card  */
+.legand_card{
+    position: fixed;
+    top: 5%;
+    left: 8%;
+    z-index: 55555555;
+    background: var(--main_color);
+    border: 2px solid gold;
+    border-radius: 39px;
+    overflow: auto;
+    display: none;
+}
+.close{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 35px;
+    color: white;
+    cursor: pointer;
+}
+    /* start up icon  */
+.up{
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    font-size: 50px;
+    color: black;
+    cursor: pointer;
+    direction: rtl;
+    z-index: 200;
+    display: none;
+}
+.up0 {
+    background-color: gold;
+    width: 31px;
+    height: 18px;
+    position: absolute;
+    top: 36%;
+    right: 18%;
+    z-index: -10;}
+.fa-solid{
+    border: 2px solid gold;
+    border-radius: 50%;
+}
+
+    /* start media  */
+@media (max-width: 765px){
+    .header .title{
+        font-size: 50px;
+    };
+    .header .decs{
+        font-size: 20px;
+    };
+    .legand_card{
+        overflow: auto;
+        height: 865px ;
+    };
+};
